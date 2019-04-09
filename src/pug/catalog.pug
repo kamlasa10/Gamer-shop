@@ -1,0 +1,197 @@
+.container.container--catalog
+    .h2 Серверы Supermicro
+    .row.js-stycky__container
+        // колонка с фильтром
+        .col-md-12.col-lg-3.col-xx-auto.js-stycky.filter-col
+            include includes/filter.pug
+        // колонка с фильтром конец
+        // центральная колонка
+        .col-md-12.col-lg-9.catalog-col
+            .row
+                .col-12.col-sm-6.col-lg-12
+                   //сортировка
+                   .sort
+                       // .top, bottom - классы для стрелки сортировки
+                       a.light-link.sort__item.active.top(href="") По популярности
+                       a.light-link.sort__item(href="") По алфавиту
+                       a.light-link.sort__item(href="") По цене
+                       +svg('asd')
+                   //сортировка конец
+                .col-12.col-sm-6.hidden-lg-up.text-right
+                    .mobile-filter Фильтры
+                        i.sprite.icon-controls
+
+            .catalog-list
+                .row
+                    .col-sm-6.col-md-3.catalog-list__item
+                        a.product-card(href="#")
+                            .catalog-list__icon.icon-like
+                            .catalog-list__icon.icon-sr
+                            .img-cont
+                                img(src="images/pr1.jpg" alt="").product-card__img
+                            .product-card__name Bloodborne: Порождение крови. Game of the Year Edition (PS4)
+
+                            .product-card__price-old
+                            .product-card__price 2990 руб.
+                            .product-card__hover
+                                .product-card__btn-cont
+                                    .btn.btn-orange.product-card__btn Подробнее
+                    .col-sm-6.col-md-3.catalog-list__item
+                        a.product-card(href="#")
+                            img(src="images/hit.png" alt="").product-card__status
+                            .catalog-list__icon.icon-like
+                            .catalog-list__icon.icon-sr
+                            .img-cont
+                                img(src="images/pr2.jpg" alt="").product-card__img
+                            .product-card__name IHF Handball Challenge 17 (PS4)
+                            .product-card__price-old 3990 руб.
+                            .product-card__price 2990 руб.
+                            .product-card__hover
+                                .product-card__btn-cont
+                                    .btn.btn-orange.product-card__btn Подробнее
+                    .col-sm-6.col-md-3.catalog-list__item
+                        a.product-card(href="#")
+                            .catalog-list__icon.icon-like.active
+                            .catalog-list__icon.icon-sr.active
+                            .img-cont
+                                img(src="images/pr3.jpg" alt="").product-card__img
+                            .product-card__name IHF Handball Challenge 17 (PS4)
+                            .product-card__price-old
+                            .product-card__price 2990 руб.
+                            .product-card__hover
+                                .product-card__btn-cont
+                                    .btn.btn-orange.product-card__btn Подробнее
+                    .col-sm-6.col-md-3.catalog-list__item
+                        a.product-card(href="#")
+                            img(src="images/sale.png" alt="").product-card__status
+                            .catalog-list__icon.icon-like
+                            .catalog-list__icon.icon-sr
+                            .img-cont
+                                img(src="images/pr4.jpg" alt="").product-card__img
+                            .product-card__name Crew. Ultimate Edition (PS4)
+                            .product-card__price-old 3990 руб.
+                            .product-card__price 2990 руб.
+                            .product-card__hover
+                                .product-card__btn-cont
+                                    .btn.btn-orange.product-card__btn Подробнее
+                    .col-sm-6.col-md-3.catalog-list__item
+                        a.product-card(href="#")
+                            .catalog-list__icon.icon-like
+                            .catalog-list__icon.icon-sr
+                            .img-cont
+                                img(src="images/pr5.jpg" alt="").product-card__img
+                            .product-card__name Crew. Ultimate Edition (PS4)
+                            .product-card__price-old 3990 руб.
+                            .product-card__price 2990 руб.
+                            .product-card__hover
+                                .product-card__btn-cont
+                                    .btn.btn-orange.product-card__btn Подробнее
+                    .col-sm-6.col-md-3.catalog-list__item
+                        a.product-card(href="#")
+                            .catalog-list__icon.icon-like
+                            .catalog-list__icon.icon-sr
+                            .img-cont
+                                img(src="images/pr6.jpg" alt="").product-card__img
+                            .product-card__name Crash Bandicoot N’sane Trilogy (PS4)
+                            .product-card__price-old 3990 руб.
+                            .product-card__price 2990 руб.
+                            .product-card__hover
+                                .product-card__btn-cont
+                                    .btn.btn-orange.product-card__btn Подробнее
+                    .col-sm-6.col-md-3.catalog-list__item
+                        a.product-card(href="#")
+                            .catalog-list__icon.icon-like
+                            .catalog-list__icon.icon-sr
+                            .img-cont
+                                img(src="images/pr7.jpg" alt="").product-card__img
+                            .product-card__name Crash Bandicoot N’sane Trilogy (PS4)
+                            .product-card__price-old 3990 руб.
+                            .product-card__price 2990 руб.
+                            .product-card__hover
+                                .product-card__btn-cont
+                                    .btn.btn-orange.product-card__btn Подробнее
+                    .col-sm-6.col-md-3.catalog-list__item
+                        a.product-card(href="#")
+                            .catalog-list__icon.icon-like
+                            .catalog-list__icon.icon-sr
+                            .img-cont
+                                img(src="images/pr8.jpg" alt="").product-card__img
+                            .product-card__name Bloodborne: Порождение крови. Game of the Year Edition (PS4)
+
+                            .product-card__price-old 3990 руб.
+                            .product-card__price 2990 руб.
+                            .product-card__hover
+                                .product-card__btn-cont
+                                    .btn.btn-orange.product-card__btn Подробнее
+                    .col-sm-6.col-md-3.catalog-list__item
+                        a.product-card(href="#")
+                            .catalog-list__icon.icon-like
+                            .catalog-list__icon.icon-sr
+                            .img-cont
+                                img(src="images/pr9.jpg" alt="").product-card__img
+                            .product-card__name Bloodborne: Порождение крови. Game of the Year Edition (PS4)
+
+                            .product-card__price-old 3990 руб.
+                            .product-card__price 2990 руб.
+                            .product-card__hover
+                                .product-card__btn-cont
+                                    .btn.btn-orange.product-card__btn Подробнее
+                    .col-sm-6.col-md-3.catalog-list__item
+                        a.product-card(href="#")
+                            .catalog-list__icon.icon-like
+                            .catalog-list__icon.icon-sr
+                            .img-cont
+                                img(src="images/pr10.jpg" alt="").product-card__img
+                            .product-card__name Crash Bandicoot N’sane Trilogy (PS4)
+                            .product-card__price-old 3990 руб.
+                            .product-card__price 2990 руб.
+                            .product-card__hover
+                                .product-card__btn-cont
+                                    .btn.btn-orange.product-card__btn Подробнее
+                    .col-sm-6.col-md-3.catalog-list__item
+                        a.product-card(href="#")
+                            .catalog-list__icon.icon-like
+                            .catalog-list__icon.icon-sr
+                            .img-cont
+                                img(src="images/pr11.jpg" alt="").product-card__img
+                            .product-card__name Dark Souls III. The Fire Fades Edition (GOTY) (PS4)
+                            .product-card__price-old 3990 руб.
+                            .product-card__price 2990 руб.
+                            .product-card__hover
+                                .product-card__btn-cont
+                                    .btn.btn-orange.product-card__btn Подробнее
+                    .col-sm-6.col-md-3.catalog-list__item
+                        a.product-card(href="#")
+                            .catalog-list__icon.icon-like
+                            .catalog-list__icon.icon-sr
+                            .img-cont
+                                img(src="images/pr12.jpg" alt="").product-card__img
+                            .product-card__name IHF Handball Challenge 17 (PS4)
+                            .product-card__price-old 3990 руб.
+                            .product-card__price 2990 руб.
+                            .product-card__hover
+                                .product-card__btn-cont
+                                    .btn.btn-orange.product-card__btn Подробнее
+
+
+            // список товаров конец
+            .pagination
+                a(href="").pagination__arrow.sprite.icon-mini-left
+                ul
+                    li
+                        a(href="").pagination-link.active 1
+                    li
+                        a(href="").pagination-link 2
+                    li
+                        a(href="").pagination-link 3
+                    li
+                        a(href="").pagination-link 4
+                    li ...
+                    li
+                        a(href="").pagination-link 7
+                a(href="").pagination__arrow.sprite.icon-mini-right
+
+section.seotext
+    .container
+        .h2 Игры гонки
+        p Детям, особенно мальчикам, гонки очень нравятся, поэтому родителей интересует, не нанесут ли они вреда ребенку. Ответ прост: если злоупотреблять игрой, как и любым другим делом, она не пойдет на пользу. Но при грамотном подходе подобное занятие принесет больше хорошего, чем плохого. Достаточно тщательно контролировать количество времени, которое уходит у вашего чада на видеоигры, чтобы избежать проблем: два-три часа в день могут плохо сказаться на здоровье. А вот 30 минут после школы станут отличной тренировкой и отдыхом одновременно.

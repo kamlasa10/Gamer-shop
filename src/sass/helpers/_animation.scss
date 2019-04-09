@@ -1,0 +1,25 @@
+.animate {
+  @supports (animation-name: top) {
+    animation-name: top;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    opacity:0;
+  }
+}
+.main {
+  @supports (animation-name: top) {
+    & > * {
+      opacity: 0;
+    }
+  }
+}
+@keyframes top {
+  from {
+    transform: translateY(20px);
+    opacity:0;
+  }
+  to {
+    transform: translateY(0);
+    opacity:1;
+  }
+}

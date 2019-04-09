@@ -1,0 +1,25 @@
+.copyright {
+  padding: rem(27) 0;
+  @include media-breakpoint-up(xs) {
+    text-align: center;
+  }
+}
+.copyright-item {
+  color: $blue;
+  font-size: rem(18);
+  font-weight: 400;
+}
+a.copyright-item {
+  @extend .link;
+}
+.link {
+  text-decoration: none !important;
+  border-bottom: 1px solid currentColor;
+  transition: 0.2s;
+  &:hover {
+    border-color: transparent;
+  }
+}
+p a {
+ @extend .link;
+}

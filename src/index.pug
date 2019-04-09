@@ -1,0 +1,325 @@
+include pug/project-settings.pug
+include pug/mixins/mixins.pug
+
+doctype html
+html
+  head(lang="en")
+    include pug/metatags.pug
+    +title('Главная')
+    include pug/styles.pug
+  body
+    include pug/svg.pug
+
+
+    include pug/header.pug
+    .main-slider
+      .main-slide(style="background-image: url(images/slide-bg.jpg)").text-right
+        .container
+          .row
+            .col-md-6.main-slider__img
+              img(src="images/slide-image.png" alt="").absolute-img
+            .col-md-6
+              img(src="images/slide-logo.png" alt="").slide-logo
+              .slide-title Переходи на новый уровень
+              .slide-text только в августе скидка 5%
+              a.btn.btn-orange Перейти в каталог
+      .main-slide(style="background-image: url(images/slide-bg.jpg)").text-right
+        .container
+          .row
+            .col-md-6.main-slider__img
+              img(src="images/slide-image.png" alt="").absolute-img
+            .col-md-6
+              img(src="images/slide-logo.png" alt="").slide-logo
+              .slide-title Переходи на новый уровень
+              .slide-text только в августе скидка 5%
+              a.btn.btn-orange Перейти в каталог
+
+    section.text-center
+      .container
+        .h2 Игровые приставки и игры для вас!
+        p Где купить игровую приставку? В проверенном магазине. А где покупать игры для приставок? Там, где больше выбора! Наш интернет-магазин предлагает просмотреть огромный каталог, разделенный для удобства покупателей на несколько категорий.
+
+        .advantages
+          .advantages__item
+            img(src="images/ico1.png" alt="").advantages__img
+            .advantages__text Наличный и безналичный расчёт
+          .advantages__item
+            img(src="images/ico2.png" alt="").advantages__img
+            .advantages__text Доставка по всей России
+          .advantages__item
+            img(src="images/ico3.png" alt="").advantages__img
+            .advantages__text Возврат товара в течение 30 дней
+          .advantages__item
+            img(src="images/ico5.png" alt="").advantages__img
+            .advantages__text Гарантия качества всех товаров
+          .advantages__item
+            img(src="images/ico4.png" alt="").advantages__img
+            .advantages__text Бесплатный звонок 8 800 111-22-33
+
+    section
+      .container
+        .row
+          .col-md-6
+            a.cart-item(href="#")
+              img(src="images/cart1.png" alt="")
+              .cart-item__text PlayStation
+          .col-md-6
+            a.cart-item(href="#")
+              img(src="images/cart2.png" alt="")
+              .cart-item__text XBOX
+          .col-md-6
+            a.cart-item(href="#")
+              img(src="images/cart3.png" alt="")
+              .cart-item__text SWITCH
+          .col-md-6
+            a.cart-item(href="#")
+              img(src="images/cart4.png" alt="")
+              .cart-item__text PC
+        .text-center.m-t-10
+          a.btn.btn-transparent Перейти в каталог
+    section.bg-pattern
+      .container
+        .h2.text-center Лучшие предложения
+        .filter-slider
+          .slider-nav
+            .slider-nav__inner
+              .slider-nav__link(data-filter="hit") Хит
+              .slider-nav__link(data-filter="adv") Советуем
+              .slider-nav__link(data-filter="new") Новинка
+              .slider-nav__link(data-filter="sale") Распродажа
+
+          .filtering
+            div(data-filter="by")
+              a.product-card(href="#")
+                img(src="images/sale.png" alt="").product-card__status
+                .img-cont
+                  img(src="images/pr1.jpg" alt="").product-card__img
+                .product-card__name Dark Souls III. The Fire Fades Edition (GOTY) (PS4)
+                .product-card__price-old 3990 руб.
+                .product-card__price 2990 руб.
+                .product-card__hover
+                  .product-card__btn-cont
+                    .btn.btn-orange.product-card__btn Подробнее
+
+            div(data-filter="by")
+              a.product-card(href="#")
+                .img-cont
+                  img(src="images/pr2.jpg" alt="").product-card__img
+                .product-card__name Dark Souls III. The Fire Fades Edition (GOTY) (PS4)
+                .product-card__price-old 3990 руб.
+                .product-card__price 2990 руб.
+                .product-card__hover
+                  .product-card__btn-cont
+                    .btn.btn-orange.product-card__btn Подробнее
+            div(data-filter="by")
+              a.product-card(href="#")
+                img(src="images/hit.png" alt="").product-card__status
+                .img-cont
+                  img(src="images/pr5.jpg" alt="").product-card__img
+                .product-card__name Dark Souls III. The Fire Fades Edition (GOTY) (PS4)
+                .product-card__price-old 3990 руб.
+                .product-card__price 2990 руб.
+                .product-card__hover
+                  .product-card__btn-cont
+                    .btn.btn-orange.product-card__btn Подробнее
+            div(data-filter="by")
+              a.product-card(href="#")
+                .img-cont
+                  img(src="images/pr4.jpg" alt="").product-card__img
+                .product-card__name Dark Souls III. The Fire Fades Edition (GOTY) (PS4)
+                .product-card__price-old 3990 руб.
+                .product-card__price 2990 руб.
+                .product-card__hover
+                  .product-card__btn-cont
+                    .btn.btn-orange.product-card__btn Подробнее
+            div(data-filter="by")
+              a.product-card(href="#")
+                .img-cont
+                  img(src="images/pr5.jpg" alt="").product-card__img
+                .product-card__name Dark Souls III. The Fire Fades Edition (GOTY) (PS4)
+                .product-card__price-old 3990 руб.
+                .product-card__price 2990 руб.
+                .product-card__hover
+                  .product-card__btn-cont
+                    .btn.btn-orange.product-card__btn Подробнее
+            div(data-filter="by")
+              a.product-card(href="#")
+                img(src="images/sale.png" alt="").product-card__status
+                .img-cont
+                  img(src="images/pr1.jpg" alt="").product-card__img
+                .product-card__name Dark Souls III. The Fire Fades Edition (GOTY) (PS4)
+                .product-card__price-old 3990 руб.
+                .product-card__price 2990 руб.
+                .product-card__hover
+                  .product-card__btn-cont
+                    .btn.btn-orange.product-card__btn Подробнее
+    section.border-bottom.big-padding
+      .container
+        .logo-slider
+          a(href="")
+            img(src="images/logo1.png")
+          a(href="")
+            img(src="images/logo2.png")
+          a(href="")
+            img(src="images/logo3.png")
+          a(href="")
+            img(src="images/logo4.png")
+          a(href="")
+            img(src="images/logo5.png")
+          a(href="")
+            img(src="images/logo1.png")
+          a(href="")
+            img(src="images/logo2.png")
+          a(href="")
+            img(src="images/logo3.png")
+          a(href="")
+            img(src="images/logo4.png")
+          a(href="")
+            img(src="images/logo5.png")
+
+    section.last-news
+      .container
+        .row
+          .col-md-8
+            .h2.m-b-40 Новости
+            a.link-orange.all-news(href="") Все новости
+            .row
+              .col-md-6
+                .news-item
+                  .date 13 января 2017
+                  a.link-title Тачки 2 (Disney/Pixar) (PS3) новый выпуск
+                  .announce Молния Мак-Куин и все его друзья возвращаются на экраны, но теперь уже в качестве игры для PlayStation 3. Игра создана по мотивам популярного мульт-блокбастера 2011 года.
+
+              .col-md-6
+                .news-item
+                  .date 2 Июня 2017
+                  a.link-title Праздник Спорта (Sports Champions) (PS3) выпуск 2017
+                  .announce Игра демонстрирует новые совершенные технологии консоли PlayStation. Она была разработана совместно с PlayStation Move, что позволят вплоть до мельчайших деталей воспроизводить каждое движение ...
+
+          .col-md-4
+            form.subscribe-form.bg-pattern2
+              .advantages__item
+                img(src="images/letter.png" alt="").advantages__img
+
+                .advantages__text
+                  .h4 Подписывайтесь!
+                  | Узнавайте свежую информацию о скидках и акциях первым.
+              input(type="text" placeholder="Оставьте свой e-mail").form-control
+              button(type="submit").btn.btn-orange Подписаться
+    section.map-section
+      script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU")
+      #address-map.map-in-section
+      .container
+        .h2 Наши магазины
+        .row.align-items-end
+          .col-md-7.col-lg-9
+            .adress-slider
+              a.adress(data-coord="[55.790848, 49.121775]")
+                .adress__city
+                  i.sprite.icon-map
+                  | Екатеринбург
+                .adress__text
+                  div
+                    .adress__label Адрес:
+                    .adress__label Телефон:
+                    .adress__label Работает:
+                  div
+                    .adress__value ТЦ Гринвич, 8 марта 46
+                    .adress__value +7 982-726-38-01
+                    .adress__value с 10-00 до 20-00
+              a.adress(data-coord="[55.792134, 49.122126]")
+                .adress__city
+                  i.sprite.icon-map
+                  | Челябинск
+                .adress__text
+                  div
+                    .adress__label Адрес:
+                    .adress__label Работает:
+                  div
+                    .adress__value Вокзальная 47
+                    .adress__value с 10-00 до 19-00
+              a.adress(data-coord="[55.785154, 49.118667]")
+                .adress__city
+                  i.sprite.icon-map
+                  | Первоуральск
+                .adress__text
+                  div
+                    .adress__label Адрес:
+                    .adress__label Работает:
+                  div
+                    .adress__value Ленина 195
+                    .adress__value с 10-00 до 19-00
+              a.adress
+                .adress__city
+                  i.sprite.icon-map
+                  | Екатеринбург
+                .adress__text
+                  div
+                    .adress__label Адрес:
+                    .adress__label Телефон:
+                    .adress__label Работает:
+                  div
+                    .adress__value ТЦ Гринвич, 8 марта 46
+                    .adress__value +7 982-726-38-01
+                    .adress__value с 10-00 до 20-00
+              a.adress
+                .adress__city
+                  i.sprite.icon-map
+                  | Челябинск
+                .adress__text
+                  div
+                    .adress__label Адрес:
+                    .adress__label Работает:
+                  div
+                    .adress__value Вокзальная 47
+                    .adress__value с 10-00 до 19-00
+              a.adress
+                .adress__city
+                  i.sprite.icon-map
+                  | Первоуральск
+                .adress__text
+                  div
+                    .adress__label Адрес:
+                    .adress__label Работает:
+                  div
+                    .adress__value Ленина 195
+                    .adress__value с 10-00 до 19-00
+          .col-md-5.col-lg-3
+            a.adress.all-address
+              i.sprite.icon-note
+              div Посмотреть все магазины на карте
+
+    section
+      .container
+        .row
+          .col-md-6
+            img(src="images/about.jpg" alt="")
+          .col-md-6
+            .h2 О компании
+            p «GamePark» был основан в 1996 году как сеть розничных точек по продаже видеоигр, приставок и аксессуаров. Первый розничный магазин был открыт в 1999 году. А регистрация официального товарного знака состоялась 8 Января 2004 года. Ассортимент наших магазинов ориентирован на любителей видеоигр, PC пользователей, а также геймеров со стажем!
+            p В настоящее время наша компания управляет сетью розничных магазинов, прочно занявших свою нишу в области мультимедийных развлечений!
+            a.more-btn
+              i.sprite.icon-orange-arrow
+              | Подробнее
+    section.bg-pattern2
+      .container
+        .row
+          .col-md-7
+            form.subscribe-form.bg-pattern2.flex-form
+              .advantages__item
+                img(src="images/letter.png" alt="").advantages__img
+                .advantages__text Подписывайтесь <br> на новости и акции
+              input(type="text" placeholder="Оставьте свой e-mail").form-control
+              button(type="submit").btn.btn-orange Подписаться
+
+          .col-md-5.text-center.text-md-right
+            i.sprite.icon-tel-big
+            a(href="tel:+79991112233").big-phone +7 999 111-22-33
+            div
+              a.link-orange(href="#") Заказать звонок
+
+
+
+
+
+    include pug/footer.pug

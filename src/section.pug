@@ -1,0 +1,88 @@
+include pug/project-settings.pug
+include pug/mixins/mixins.pug
+
+doctype html
+html
+    head(lang="en")
+        include pug/metatags.pug
+        +title('Раздел')
+        include pug/styles.pug
+    body
+        include pug/svg.pug
+
+
+        include pug/header.pug
+
+        include pug/includes/breadcrumb.pug
+
+        .container
+            .h2.mb-5 PlayStation 4
+
+            .row
+                .col-md-6
+                    .row
+                        .col-sm-2
+                            img(src="images/o1.png")
+                        .col-sm-10
+                            .dropdown-menu__item.mb-5
+                                .h3 Лидеры продаж
+                                p
+                                    a(href="#").gray-link Dark Souls III.
+                                    a(href="#").gray-link The Fire Fades Edition (GOTY) (PS4)
+                                    a(href="#").gray-link Outlast Trinity (PS4)
+                                    a(href="#").gray-link Sniper: Ghost Warrior 3
+                                    a(href="#").gray-link Persona 5. Standard edition
+                .col-md-6
+                    .row
+                        .col-sm-2
+                            img(src="images/o2.png")
+                        .col-sm-10
+                            .dropdown-menu__item.mb-5
+                                .h3 Игры PlayStation4 приставки
+                                p
+                                    a(href="#").gray-link Sony PlayStation 4 Slim 500 Gb Gold Limited Edition (Золотая)
+                                    a(href="#").gray-link Sony PlayStation 4 Slim «Хиты PlayStation» комплект с тремя играми и подпиской PlayStation Plus 90д
+
+
+
+                .col-md-6
+                    .row
+                        .col-sm-2
+                            img(src="images/o3.png")
+                        .col-sm-10
+                            .dropdown-menu__item.mb-5
+                                .h3 PlayStation4
+                                p
+                                    a(href="#").gray-link Гонки / Racing
+                                    a(href="#").gray-link Боевик / Action
+                                    a(href="#").gray-link Стратегии / Strategy
+                                    a(href="#").gray-link Драки / Fighting
+                                    a(href="#").gray-link Приключения / Adventure
+                                    a(href="#").gray-link Бродилки / Arcade
+                                    a(href="#").gray-link Пазлы / Puzzle
+                                    a(href="#").gray-link Музыкальные / Music
+
+                .col-md-6
+                    .row
+                        .col-sm-2
+                            img(src="images/o4.png")
+                        .col-sm-10
+                            .dropdown-menu__item.mb-5
+                                .h3 Игры PlayStation4 аксессуары
+                                p
+
+                                    a(href="#").gray-link Наушники беспроводные
+                                    a(href="#").gray-link Накладки защитные на джойстики геймпада
+                                    a(href="#").gray-link Игровая мышь и Кейпад
+                                    a(href="#").gray-link Подписка/карта оплаты на PlayStation Plus - 365 дней (цифровой код по почте)
+                                    a(href="#").gray-link Зарядное устройство
+                                    a(href="#").gray-link Controller
+
+
+
+
+
+
+
+
+        include pug/footer.pug

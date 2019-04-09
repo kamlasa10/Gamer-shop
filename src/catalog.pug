@@ -1,0 +1,22 @@
+include pug/project-settings.pug
+include pug/mixins/mixins.pug
+
+doctype html
+html
+    head(lang="en")
+        include pug/metatags.pug
+        +title('Каталог')
+        include pug/styles.pug
+    body
+        include pug/svg.pug
+
+
+        include pug/header.pug
+
+        include pug/includes/breadcrumb.pug
+
+        include pug/catalog.pug
+
+
+
+        include pug/footer.pug

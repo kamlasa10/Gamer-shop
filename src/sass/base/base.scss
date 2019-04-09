@@ -1,0 +1,191 @@
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+html {
+    font-size: $baseFontSize + px;
+  @include media-breakpoint-only(lg) {
+    font-size: 14px;
+  }
+  @include media-breakpoint-only(md) {
+    font-size: 13px;
+  }
+  @include media-breakpoint-only(sm) {
+    font-size: 12px;
+  }
+  @include media-breakpoint-only(xs) {
+    font-size: 11px;
+  }
+  box-sizing: border-box;
+
+}
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Fira Sans', sans-serif;
+*/
+body {
+    color: $body-color;
+    margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+  line-height: 2;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+  opacity: 0;
+  transition: opacity 0.5s;
+  &:not(.anim) > *:not(.no-animate) {
+    //opacity: 0;
+  }
+  &:not(.modal-open) {
+    overflow-y: scroll;
+  }
+  &:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    content: "";
+    background: rgba(#333, 0.8);
+    z-index: 30;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+
+}
+.body--modal {
+  position: fixed;
+  width: 100%;
+  overflow-y: scroll;
+  &:after {
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s;
+
+}
+.btn {
+  border-radius: 6px;
+  border: 1px solid transparent;
+  display: inline-block;
+  background: transparent;
+  padding: 14px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.btn-orange {
+  background-color: $orange2;
+  color: #ffffff;
+  text-transform: uppercase;
+  &:hover {
+    background-color: $orange-hover;
+
+  }
+}
+.btn-transparent {
+  color: #999999;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: $ubuntu;
+  padding: 13px 29px;
+  border-radius: 6px;
+  border: 1px solid #cccccc;
+  &:hover {
+    background-color: rgba(#cccccc, 0.2);
+  }
+}
+.animate {
+  @supports (animation-name: top) {
+    animation-name: top;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    opacity:0;
+  }
+}
+section {
+  padding: 60px 0 30px;
+}
+.big-padding {
+  padding: 97px 0 90px;
+}
+@keyframes top {
+  from {
+    transform: translateY(10px);
+    opacity:0;
+  }
+  to {
+    transform: translateY(0);
+    opacity:1;
+  }
+}
+@keyframes left {
+  from {
+    transform: translateX(-100px);
+    opacity:0;
+  }
+  to {
+    transform: translateX(0);
+    opacity:1;
+  }
+}
+.p-b-0 {
+  padding-bottom: 0 !important;
+}
+.upper {
+  text-transform: uppercase;
+}
+
+p {
+ // margin-bottom: 29px;
+}
+
+
+.m-b-40 {
+  margin-bottom: 40px;
+}
+.m-t-10 {
+  margin-top: 10px;
+}
+*::selection {
+  background: rgba(255, 192, 0, 0.7);
+}
+.img-cont {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.centring {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+input,
+button {
+  outline: none;
+  transition: 0.2s;
+}
+.bg-pattern2 {
+  background-image: url(../images/pattern-2.jpg);
+
+}

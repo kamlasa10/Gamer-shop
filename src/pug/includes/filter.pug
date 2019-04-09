@@ -1,0 +1,111 @@
+form.filter
+    .filter-item.open
+        .filter-item__name Диапазон цен, р:
+
+        .filter-item__hidden
+            .row
+                .col-sm-6
+                    label.filtr-label От
+                        input(type="text" value="204").filtr-input.filter-min
+                .col-sm-6
+                    label.filtr-label До
+                        input(type="text" value="68 909").filtr-input.filter-max
+
+            input.range(value="" data-slider-min="204" data-slider-max="68909" data-slider-step="5" data-slider-value="[204,68909]" data-slider-handle="custom")
+    .filter-item.open
+        .filter-item__name Выпуск:
+        .filter-item__hidden
+            label.check-label
+                input(type="checkbox").check-styled
+                span.check-label__text 2017
+            label.check-label
+                input(type="checkbox" checked).check-styled
+                span.check-label__text 2016
+            label.check-label
+                input(type="checkbox").check-styled
+                span.check-label__text 2015
+    .filter-item.open
+        .filter-item__name ТИП:
+        .filter-item__hidden
+            label.check-label
+                input(type="checkbox").check-styled
+                span.check-label__text Стоечный
+            label.check-label
+                input(type="checkbox" checked).check-styled
+                span.check-label__text Блейд
+    .filter-item.open
+        .filter-item__name Кол-во жёстких дисков:
+        .filter-item__hidden
+            label.check-label
+                input(type="checkbox").check-styled
+                span.check-label__text 4
+            label.check-label
+                input(type="checkbox" checked).check-styled
+                span.check-label__text 8
+            label.check-label
+                input(type="checkbox").check-styled
+                span.check-label__text 12
+            label.check-label
+                input(type="checkbox" checked).check-styled
+                span.check-label__text 16
+            label.check-label
+                input(type="checkbox" checked).check-styled
+                span.check-label__text 24
+    .filter-item.open
+        .filter-item__name Цвет:
+        .filter-item__hidden
+            .color-radio
+                label
+                    input(type='radio', value='#018dc8', name='same' checked)
+                    span(style='background:#018dc8')
+                label
+                    input(type='radio', value='#25a138', name='same')
+                    span(style='background:#25a138')
+                label
+                    input(type='radio', value='#333333', name='same')
+                    span(style='background:#333333')
+
+    .filter-item
+        .filter-item__name Сокет:
+        .filter-item__hidden
+            label.check-label
+                input(type="checkbox").check-styled
+                span.check-label__text 4
+            label.check-label
+                input(type="checkbox" checked).check-styled
+                span.check-label__text 8
+            label.check-label
+                input(type="checkbox").check-styled
+                span.check-label__text 12
+            label.check-label
+                input(type="checkbox" checked).check-styled
+                span.check-label__text 16
+            label.check-label
+                input(type="checkbox" checked).check-styled
+                span.check-label__text 24
+    .filter-item
+        .filter-item__name Кол-во блоков питания:
+        .filter-item__hidden
+            label.check-label
+                input(type="checkbox").check-styled
+                span.check-label__text 4
+            label.check-label
+                input(type="checkbox" checked).check-styled
+                span.check-label__text 8
+            label.check-label
+                input(type="checkbox").check-styled
+                span.check-label__text 12
+            label.check-label
+                input(type="checkbox" checked).check-styled
+                span.check-label__text 16
+            label.check-label
+                input(type="checkbox" checked).check-styled
+                span.check-label__text 24
+    button(type="submit").btn.btn-orange Показать
+    button(type="reset").btn.btn-transparent Сбросить
+
+
+
+a.modile-filter-btn Применить
+
+

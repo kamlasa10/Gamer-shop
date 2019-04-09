@@ -1,0 +1,23 @@
+.news-item {
+ & > * {
+   margin-bottom: 10px;
+ }
+}
+.date {
+  color: $text;
+  font-size: 12px;
+  line-height: 1.8;
+}
+.link-title {
+  color: $orange2;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.2;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+.announce {
+  color: $text2;
+  line-height: 1.8;
+}
